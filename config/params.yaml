@@ -8,6 +8,7 @@ data:
   silver_path: "data/silver"
   gold_path: "data/gold"
   external_path: "data/external"
+  rejected_path: "data/rejected"
 
 # Modeling Parameters
 model:
