@@ -46,3 +46,15 @@ Before any commit:
 - `skills/` for deep workflow guidance
 - `commands/` for slash-command patterns worth adapting into prompts/macros
 - `mcp-configs/` for shared connector baselines
+
+POI Scraping
+
+
+Here are the strict requirements for the script:
+1. Input Data: Read a CSV file (e.g., `data/silver/outlet_master_cleaned.csv`) containing the columns `Outlet_ID`, `Latitude`, and `Longitude`.
+2. API Query: For each location, use an Overpass QL query to count the number of specific POIs within a 1000-meter radius. The specific amenities/POIs to extract counts for are: schools, hospitals, bus stops (highway=bus_stop), restaurants, fuel stations, and tourist places (tourism=*).
+3. Error Handling: Include robust `try-except` blocks. If a request fails or a location is invalid, the script should not crash; it should log the error and return 0 for those counts.
+4. Rate Limiting: Add a `time.sleep(1)` between requests to respect the Overpass API rate limits and avoid our IP getting blocked.
+5. Output Data: Save the final aggregated dataset (containing the `Outlet_ID` and the respective individual POI counts) as a new CSV file directly to `data/gold/poi_data.csv`.
+
+Please provide clean, modular, and well-commented code suitable for a data Lakehouse architecture.
