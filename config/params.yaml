@@ -1,0 +1,19 @@
+# General Configuration
+project_name: "Data Storm 7.0"
+random_seed: 42
+
+# Data Paths
+data:
+  bronze_path: "data/bronze"
+  silver_path: "data/silver"
+  gold_path: "data/gold"
+  external_path: "data/external"
+
+# Modeling Parameters
+model:
+  target: "volume_potential"
+  censoring_indicator: "is_stockout"
+  params:
+    max_depth: 6
+    learning_rate: 0.1
+    n_estimators: 100

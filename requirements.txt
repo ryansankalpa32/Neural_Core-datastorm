@@ -1,0 +1,29 @@
+# Data Processing & Lakehouse
+pandas
+numpy
+pyspark
+dbt-core
+
+# Machine Learning & Modeling
+scikit-learn
+xgboost
+lightgbm
+statsmodels
+scipy
+lifelines # Useful for censored regression
+
+# Web Scraping & APIs
+requests
+beautifulsoup4
+scrapy
+
+# Visualization
+matplotlib
+seaborn
+plotly
+
+# Utilities
+pyyaml
+jupyter
+pytest
+python-dotenv
