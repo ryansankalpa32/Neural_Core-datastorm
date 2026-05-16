@@ -1,6 +1,7 @@
 # Data Processing & Lakehouse
 pandas
 numpy
+pyarrow
 pyspark
 dbt-core
 

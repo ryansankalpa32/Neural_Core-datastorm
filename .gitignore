@@ -168,6 +168,8 @@ data/gold/*
 !data/gold/.gitkeep
 data/external/*
 !data/external/.gitkeep
+data/rejected/*
+!data/rejected/.gitkeep
 
 # Models
 models/*
